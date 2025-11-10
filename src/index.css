@@ -8,8 +8,8 @@
     --color-ligth: #FFFFFF;
     --color-dark: #000000;
 
-    --color-bg-logo: rgba(42, 33, 25, 85%);
-    --color-bg-button-header: rgba(168, 168, 168, 62%);
+    --color-bg-logo: rgba(42, 33, 25, 90%);
+    --color-bg-button-header: rgba(168, 168, 168, 90%);
 
     --breakpoint-xs: 55rem;
 }
