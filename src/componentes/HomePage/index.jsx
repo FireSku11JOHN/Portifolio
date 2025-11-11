@@ -11,7 +11,7 @@ export const HomePage = () => {
 
         // === Cena ===
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0x000000);
+        scene.background = null;
 
         // === Câmera ===
         const camera = new THREE.PerspectiveCamera(
@@ -23,7 +23,7 @@ export const HomePage = () => {
         camera.position.set(0, 50, 150); // fica olhando de cima e mais atrás
 
         // === Renderizador ===
-        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight);
         mountRef.current.appendChild(renderer.domElement);
 
@@ -39,7 +39,7 @@ export const HomePage = () => {
         // === Geometria e material ===
         const geometry = new THREE.PlaneGeometry(600, 500, 50, 50);
         const material = new THREE.MeshBasicMaterial({
-            color: 0xff6600,
+            color: 0xB3B3B3,
             wireframe: true,
         });
 
@@ -108,7 +108,8 @@ export const HomePage = () => {
     }, []);
 
     return (
-        <div ref={mountRef} className="relative z-1 w-full h-screen overflow-hidden">
+        <div ref={mountRef} className="relative z-1 w-full h-screen overflow-hidden
+            bg-linear-to-t from-cyan via-ligth-cyan to-cyan">
             <Header />
         </div>
     );
