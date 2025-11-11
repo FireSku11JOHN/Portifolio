@@ -1,14 +1,17 @@
 import { Container } from "./componentes/Container"
 import { HomePage } from "./componentes/HomePage"
-import { Header } from "./componentes/Header"
+import { MainContent } from "./componentes/MainContent/MainContent"
 
 function App() {
 
   return (
-    <div className="w-screen">
+    <div className="w-full">
       <Container>
         <HomePage />
       </Container>
+      <MainContent>
+        <p>teste</p>
+      </MainContent>
     </div>
   )
 }

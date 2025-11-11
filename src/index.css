@@ -11,10 +11,13 @@
 
     --color-bg-logo: rgba(42, 33, 25, 90%);
     --color-bg-button-header: rgba(168, 168, 168, 90%);
+    --color-bg-main-content: #161302;
 
     --breakpoint-xs: 55rem;
+
+    --header-w: calc(100vw - )
 }
 
 body {
-    background: #333333;
+    background: var(--color-cyan);
 }

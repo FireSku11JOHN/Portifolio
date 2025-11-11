@@ -7,7 +7,7 @@ export const Header = () => {
     const normalButtonStyles = "bg-bg-button-header text-center text-ligth text-[14px] leading-[120%] tracking-[1px] py-2 rounded flex-1"
 
     return (
-        <nav className="absolute z-5 w-full">
+        <nav className="fixed z-5 w-full">
             <div className="flex gap-3 mx-6 my-3 xs:hidden">
                 <img src={Logo} className="bg-bg-logo h-8 py-2 rounded inline-block flex-1 object-contain"></img>
                 <ButtonHeader className="bg-ligth-cyan text-center text-dark text-[14px] leading-[120%] tracking-[1px] py-2 rounded flex-1">
