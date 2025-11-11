@@ -1,15 +1,90 @@
 import { Container } from "./componentes/Container"
+import { Header } from "./componentes/Header"
 import { HomePage } from "./componentes/HomePage"
 import { MainContent } from "./componentes/MainContent/MainContent"
 
+
 function App() {
+
 
   return (
     <div className="w-full">
-      <Container>
+      <Header/>
+      <Container >
         <HomePage />
       </Container>
       <MainContent>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
         <p>teste</p>
       </MainContent>
     </div>
