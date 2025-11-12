@@ -1,7 +1,9 @@
-import { Header } from "../Header";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { Button } from "../Button";
+import LinkedinIcon from "../../assets/Icons/Linkedin.svg";
+import GitHubIcon from "../../assets/Icons/GitHub.svg";
 
 export const HomePage = () => {
     const mountRef = useRef();
@@ -24,17 +26,29 @@ export const HomePage = () => {
 
         // === Renderizador ===
         const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-        renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight);
+        renderer.setSize(
+            mountRef.current.clientWidth,
+            mountRef.current.clientHeight
+        );
+
+        // Garante que o canvas fique como fundo
+        renderer.domElement.style.position = "absolute";
+        renderer.domElement.style.top = "0";
+        renderer.domElement.style.left = "0";
+        renderer.domElement.style.width = "100%";
+        renderer.domElement.style.height = "100%";
+        renderer.domElement.style.zIndex = "0";
+
         mountRef.current.appendChild(renderer.domElement);
 
         // === OrbitControls ===
-        // const controls = new OrbitControls(camera, renderer.domElement);
-        // controls.enableDamping = true;
-        // controls.dampingFactor = 0.05;
-        // controls.minDistance = 50;
-        // controls.maxDistance = 500;
-        // controls.maxPolarAngle = Math.PI / 2;
-        // controls.target.set(0, 40, 0);
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.minDistance = 50;
+        controls.maxDistance = 500;
+        controls.maxPolarAngle = Math.PI / 2;
+        controls.target.set(0, 40, 0);
 
         // === Geometria e material ===
         const geometry = new THREE.PlaneGeometry(600, 500, 50, 50);
@@ -79,7 +93,7 @@ export const HomePage = () => {
             positions.needsUpdate = true;
             mirrorPositions.needsUpdate = true;
 
-            // controls.update();
+            controls.update();
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         }
@@ -108,9 +122,25 @@ export const HomePage = () => {
     }, []);
 
     return (
-        <div ref={mountRef} className="relative z-1 w-full h-screen overflow-hidden
-            bg-linear-to-t from-cyan via-ligth-cyan to-cyan">
-            {/* <Header /> */}
+        <div ref={mountRef} className="relative flex w-full h-screen overflow-hidden
+            bg-linear-to-t from-cyan via-light-cyan to-cyan">
+            {/* Elemento 3D aqui */}
+            <div className="absolute inset-0 flex flex-col justify-center mx-16 z-10">
+                <div className="flex flex-col bg-dark-trans gap-8 p-6 text-light w-fit rounded-lg">
+                    <h1 className="text-[32px] font-semibold">John Ávylan</h1>
+                    <p className="text-[26px] font-medium">Desenvolvedor Front-End</p>
+                    <div className="inline-flex gap-8">
+                        <Button text="LinkedIn" icon={LinkedinIcon} />
+                        <Button
+                            text="GitHub"
+                            icon={GitHubIcon}
+                            addClass="border border-white text-light bg-transparent"
+                        />
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     );
 };

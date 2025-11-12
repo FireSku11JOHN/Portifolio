@@ -4,10 +4,11 @@
 @theme {
     --font-sans: 'Geist Mono', monospace;
 
-    --color-ligth-cyan: #066F9C;
+    --color-light-cyan: #066F9C;
     --color-cyan: #022636;
-    --color-ligth: #FFFFFF;
+    --color-light: #FFFFFF;
     --color-dark: #000000;
+    --color-dark-trans: rgba(42, 33, 25, 85%);
 
     --color-bg-logo: rgba(42, 33, 25, 90%);
     --color-bg-button-header: rgba(168, 168, 168, 90%);
@@ -20,4 +21,5 @@
 
 body {
     background: var(--color-cyan);
+    /* font-size: var(--font-sans); */
 }
