@@ -4,6 +4,8 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { Button } from "../Button";
 import LinkedinIcon from "../../assets/Icons/Linkedin.svg";
 import GitHubIcon from "../../assets/Icons/GitHub.svg";
+import Photo from "../../assets/Icons/Photo.svg";
+
 
 export const HomePage = () => {
     const mountRef = useRef();
@@ -122,11 +124,12 @@ export const HomePage = () => {
     }, []);
 
     return (
-        <div ref={mountRef} className="relative flex w-full h-screen overflow-hidden
+        <div ref={mountRef} className="relative flex items-center w-full h-screen overflow-hidden
             bg-linear-to-t from-cyan via-light-cyan to-cyan">
             {/* Elemento 3D aqui */}
-            <div className="absolute inset-0 flex flex-col justify-center mx-16 z-10">
-                <div className="flex flex-col bg-dark-trans gap-8 p-6 text-light w-fit rounded-lg">
+            <div className="absolute inset-0 flex justify-between items-center mx-16 z-10">
+
+                <div className="flex flex-col bg-dark-trans gap-8 p-6 text-light h-fit w-fit rounded-lg">
                     <h1 className="text-[32px] font-semibold">John Ávylan</h1>
                     <p className="text-[26px] font-medium">Desenvolvedor Front-End</p>
                     <div className="inline-flex gap-8">
@@ -138,6 +141,10 @@ export const HomePage = () => {
                         />
                     </div>
                 </div>
+                <div>
+                    <img src={Photo} alt="" className="" />
+                </div>
+
             </div>
 
 
