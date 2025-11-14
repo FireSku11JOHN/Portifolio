@@ -15,8 +15,8 @@
     --color-bg-main-content: #161302;
 
     --breakpoint-xs: 55rem;
-
-    --header-w: calc(100vw - )
+    --breakpoint-ts: 65rem;
+    --breakpoint-mobile: 27rem;
 }
 
 body {
