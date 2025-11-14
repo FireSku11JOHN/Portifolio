@@ -14,6 +14,9 @@
     --color-bg-button-header: rgba(168, 168, 168, 90%);
     --color-bg-main-content: #161302;
 
+    --color-hover-button-bg: #6F6F6F;
+    --color-hover-button-text: #ffffff;
+
     --breakpoint-xs: 55rem;
     --breakpoint-ts: 65rem;
     --breakpoint-mobile: 27rem;

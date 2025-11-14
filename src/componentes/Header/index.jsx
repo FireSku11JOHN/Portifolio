@@ -4,7 +4,7 @@ import { ButtonHeader } from "../ButtonHeader"
 
 export const Header = () => {
 
-    const normalButtonStyles = "bg-bg-button-header text-center text-light text-[14px] leading-[120%] tracking-[1px] py-2 rounded flex-1 cursor-pointer max-mobile:text-[12px]"
+    const normalButtonStyles = "bg-bg-button-header text-center text-dark text-[14px] leading-[120%] tracking-[1px] py-2 rounded flex-1 cursor-pointer max-mobile:text-[12px]"
 
     return (
         <nav className="fixed z-50 w-full">
