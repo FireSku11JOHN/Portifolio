@@ -12,7 +12,7 @@
 
     --color-bg-logo: rgba(42, 33, 25, 90%);
     --color-bg-button-header: rgba(168, 168, 168, 90%);
-    --color-bg-main-content: #161302;
+    --color-bg-main-content: #161302; /*marrom*/
 
     --color-hover-button-bg: #6F6F6F;
     --color-hover-button-text: #ffffff;
@@ -20,6 +20,7 @@
     --breakpoint-xs: 55rem;
     --breakpoint-ts: 65rem;
     --breakpoint-mobile: 27rem;
+    --breakpoint-tablet: 45rem;
 }
 
 body {

@@ -9,7 +9,7 @@ import Photo from "../../assets/Icons/Photo.svg";
 
 export const HomePage = () => {
     const mountRef = useRef();
-    const disable3D = true
+    const disable3D = false
 
     if (disable3D){
         useEffect(() => {
