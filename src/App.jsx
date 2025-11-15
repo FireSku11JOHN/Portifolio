@@ -2,7 +2,7 @@ import { Container } from "./componentes/Container"
 import { Header } from "./componentes/Header"
 import { HomePage } from "./componentes/HomePage"
 import { MainContent } from "./componentes/MainContent/MainContent"
-import { TicTacToe } from "./componentes/MainContent/MainContent/TicTacToe/TicTacToe"
+import { TicTacToe } from "./componentes/MainContent/TicTacToe/TicTacToe"
 
 function App() {
 
@@ -14,6 +14,7 @@ function App() {
       </Container>
       <MainContent>
         <TicTacToe/>
+        <RotateWhell/>
       </MainContent>
     </div>
   )
