@@ -21,6 +21,7 @@
     --breakpoint-ts: 65rem;
     --breakpoint-mobile: 27rem;
     --breakpoint-tablet: 45rem;
+    --breakpoint-tablet-wheel: 50rem;
 }
 
 body {
