@@ -69,7 +69,7 @@ export const TicTacToe = () => {
                 Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e seu impacto na vida das pessoas. Tenho grande interesse em aprender e aprimorar minhas habilidades, sempre buscando novos desafios.
             </div>
             <div className=" text-light flex flex-col items-center justify-center h-[370px] gap-8">
-                <p>Vamos Jogar!</p>
+                <p className="underline">Vamos Jogar!</p>
                 <div className="grid grid-cols-3 grid-rows-3 gap-[5px] w-fit bg-light items-center justify-center">
                     {boardState.map((value, index) => (
                         <div
