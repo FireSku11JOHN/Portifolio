@@ -2,7 +2,8 @@ import { Container } from "./componentes/Container"
 import { Header } from "./componentes/Header"
 import { HomePage } from "./componentes/HomePage"
 import { MainContent } from "./componentes/MainContent/MainContent"
-import { TicTacToe } from "./componentes/MainContent/TicTacToe/TicTacToe"
+import { RotateWhell } from "./componentes/MainContent/RotateWhell"
+import { TicTacToe } from "./componentes/MainContent/TicTacToe"
 
 function App() {
 

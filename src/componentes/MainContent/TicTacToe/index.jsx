@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { useRef } from "react";
-import IconRestart from "../../../../assets/Icons/IconRestart.svg"
+import IconRestart from "../../../assets/Icons/IconRestart.svg"
 
 export const TicTacToe = () => {
 
@@ -16,7 +15,6 @@ export const TicTacToe = () => {
         setGameOver(false);
     };
 
-
     const WINNING_COMBINATIONS = [
         [0, 1, 2],
         [3, 4, 5],
@@ -31,7 +29,6 @@ export const TicTacToe = () => {
     const isDraw = board => {
         return board.every(cell => cell !== null);
     };
-
 
     const checkWin = (player, board) => {
         return WINNING_COMBINATIONS.some(combination => {
