@@ -56,7 +56,7 @@ export const RotateWhell = () => {
                     na área de TI, contribuindo com inovação e soluções eficazes.
                 </div>
 
-                <div className="flex divide-x-3">
+                {/* <div className="flex divide-x-3">
                     {INFO_CARDS.map(({ label, value }, index) => (
                         <div
                             key={label}
@@ -69,7 +69,7 @@ export const RotateWhell = () => {
                             <h3 className={H3_STYLE}>{value}</h3>
                         </div>
                     ))}
-                </div>
+                </div> */}
 
             </div>
         </div>
