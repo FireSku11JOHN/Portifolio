@@ -1,3 +1,5 @@
+import { IconCarousel } from "../IconCarousel";
+
 const SKILLS_LIST = [
     { label: "Front-End", value: ["HTML", "CSS", "JavaScript"] },
     { label: "Back-End", value: ["Python"] },
@@ -199,6 +201,7 @@ export const Skills = () => {
                     </div>
                 </div>
             </div>
+            <IconCarousel/>
         </div>
     );
 };
