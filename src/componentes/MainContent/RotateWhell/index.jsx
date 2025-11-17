@@ -3,14 +3,14 @@ import ImgRotateWhell from "../../../assets/RotateWhell.svg"
 import gsap from "gsap"
 
 const H2_STYLE =
-    "text-[22px] text-left font-extrabold max-tablet-wheel:text-[20px] max-mobile:text-[15px]";
+    "text-[22px] text-left font-extrabold max-tablet-wheel:text-[20px] max-mobile:text-[13px]";
 const H3_STYLE =
     "text-[26px] font-bold max-mobile:text-[18px]";
 
 const INFO_CARDS = [
     { label: "Projetos", value: "+6" },
     { label: "Tecnologias dominadas", value: "+4" },
-    { label: "Certificações em TI", value: "+13" },
+    { label: "Certificados em TI", value: "+13" },
 ];
 
 export const RotateWhell = () => {
@@ -56,7 +56,7 @@ export const RotateWhell = () => {
                     na área de TI, contribuindo com inovação e soluções eficazes.
                 </div>
 
-                {/* <div className="flex divide-x-3">
+                <div className="flex divide-x-3">
                     {INFO_CARDS.map(({ label, value }, index) => (
                         <div
                             key={label}
@@ -69,7 +69,7 @@ export const RotateWhell = () => {
                             <h3 className={H3_STYLE}>{value}</h3>
                         </div>
                     ))}
-                </div> */}
+                </div>
 
             </div>
         </div>
