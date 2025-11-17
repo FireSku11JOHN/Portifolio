@@ -1,32 +1,30 @@
+import builtitImg from "../../assets/img/built-it-home.png"
+import arrowRight from "../../assets/Icons/arrow-right.svg"
+import arrowRightWhite from "../../assets/Icons/arrow-right-white.svg"
+import bgGridProjects from "../../assets/img/bgGridProjects.png"
+
 const PROJETCS_CARDS = [
     {
-        img: "src/assets/img/built-it-home.png",
+        img: builtitImg,
         description: "O BuildIt é um site criado para reunir tutoriais de construções no Minecraft. O projeto foi desenvolvido com o objetivo de praticar HTML, CSS e JavaScript, ao mesmo tempo em que compartilha ideias criativas para o jogo.",
         stack: ["HTML", "CSS", "JavaScript"],
         url: "https://build-it-kappa.vercel.app/",
         github: "https://github.com/FireSku11JOHN/BuildIt?tab=readme-ov-file"
     },
     {
-        img: "src/assets/img/built-it-home.png",
+        img: builtitImg,
         description: "O BuildIt é um site criado para reunir tutoriais de construções no Minecraft. O projeto foi desenvolvido com o objetivo de praticar HTML, CSS e JavaScript, ao mesmo tempo em que compartilha ideias criativas para o jogo.",
         stack: ["HTML", "CSS", "JavaScript"],
         url: "https://build-it-kappa.vercel.app/",
         github: "https://github.com/FireSku11JOHN/BuildIt?tab=readme-ov-file"
     },
     {
-        img: "src/assets/img/built-it-home.png",
+        img: builtitImg ,
         description: "O BuildIt é um site criado para reunir tutoriais de construções no Minecraft. O projeto foi desenvolvido com o objetivo de praticar HTML, CSS e JavaScript, ao mesmo tempo em que compartilha ideias criativas para o jogo.",
         stack: ["HTML", "CSS", "JavaScript"],
         url: "https://build-it-kappa.vercel.app/",
         github: "https://github.com/FireSku11JOHN/BuildIt?tab=readme-ov-file"
-    },
-    {
-        img: "src/assets/img/built-it-home.png",
-        description: "O BuildIt é um site criado para reunir tutoriais de construções no Minecraft. O projeto foi desenvolvido com o objetivo de praticar HTML, CSS e JavaScript, ao mesmo tempo em que compartilha ideias criativas para o jogo.",
-        stack: ["HTML", "CSS", "JavaScript"],
-        url: "https://build-it-kappa.vercel.app/",
-        github: "https://github.com/FireSku11JOHN/BuildIt?tab=readme-ov-file"
-    },
+    }
 ];
 
 export const Projects = () => {
@@ -34,7 +32,7 @@ export const Projects = () => {
         <div
             className="p-16 text-light max-tablet:p-6"
             style={{
-                backgroundImage: "url('/src/assets/img/Projects.png')",
+                backgroundImage: `url(${bgGridProjects})`,
                 backgroundSize: "cover", backgroundPosition: "bottom center"
             }}
         >
@@ -74,7 +72,7 @@ export const Projects = () => {
                                     className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-[10px] font-medium max-desktop:text-[14px]"
                                 >
                                     Ver Site
-                                    <img src="src\assets\Icons\arrow-right.svg" alt="" />
+                                    <img src={arrowRight} alt="" />
                                 </a>
                             )}
 
@@ -85,7 +83,7 @@ export const Projects = () => {
                                     className="flex items-center gap-2 bg-transparent border border-white px-5 py-2 rounded-[10px] font-medium max-tablet:text-[14px]"
                                 >
                                     GitHub
-                                    <img src="src\assets\Icons\arrow-right-white.svg" alt="" />
+                                    <img src={arrowRightWhite} alt="" />
                                 </a>
                             )}
 

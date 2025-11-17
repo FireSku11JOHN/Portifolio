@@ -1,8 +1,12 @@
+import bgGridContacts from "../../assets/img/bgGridContacts.png"
+
 export const Contacts = () => {
     return (
         <div
             style={{
-                backgroundImage: "url('/src/assets/img/grid-contacts.png')"
+                backgroundImage: `url(${bgGridContacts})`
+                ,
+                backgroundSize: "cover", backgroundPosition: "bottom center"
             }}
         >
             <p>Contatos</p>
@@ -51,6 +55,6 @@ export const Contacts = () => {
             <p>Contatos</p>
             <p>Contatos</p>
             <p>Contatos</p>
-        </div>
+        </div >
     )
 }
