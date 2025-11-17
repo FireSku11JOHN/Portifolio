@@ -6,6 +6,7 @@
 
     --color-light-cyan: #066F9C;
     --color-cyan: #022636;
+    --color-dark-blue: #11113F;
     --color-light: #FFFFFF;
     --color-dark: #000000;
     --color-dark-trans: rgba(42, 33, 25, 85%);
@@ -19,9 +20,11 @@
 
     --breakpoint-xs: 55rem;
     --breakpoint-ts: 65rem;
-    --breakpoint-mobile: 27rem;
-    --breakpoint-tablet: 45rem;
-    --breakpoint-tablet-wheel: 50rem;
+    --breakpoint-mobile: 27rem; /*432px*/
+    --breakpoint-mobile-grid: 34rem; /*544px*/
+    --breakpoint-tablet: 45rem; /*720px*/
+    --breakpoint-tablet-wheel: 50rem; /*800px*/
+    --breakpoint-desktop: 64rem; /*1024px*/
 }
 
 body {

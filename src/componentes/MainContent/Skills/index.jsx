@@ -1,12 +1,5 @@
 import { IconCarousel } from "../IconCarousel";
 
-const SKILLS_LIST = [
-    { label: "Front-End", value: ["HTML", "CSS", "JavaScript"] },
-    { label: "Back-End", value: ["Python"] },
-    { label: "Frameworks & Bibliotecas", value: ["React", "Three.js", "GSAP", "Node.js"] },
-    { label: "Dados", value: ["SQL", "MySQL", "PostgreSQL"] },
-];
-
 export const Skills = () => {
     return (
         <div className="py-10">

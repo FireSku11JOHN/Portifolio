@@ -1,0 +1,56 @@
+export const Contacts = () => {
+    return (
+        <div
+            style={{
+                backgroundImage: "url('/src/assets/img/grid-contacts.png')"
+            }}
+        >
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+            <p>Contatos</p>
+        </div>
+    )
+}
