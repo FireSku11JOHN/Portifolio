@@ -10,10 +10,16 @@
     --color-light: #FFFFFF;
     --color-dark: #000000;
     --color-dark-trans: rgba(42, 33, 25, 85%);
+    --color-email-dark-blue: #0C0B16;
+    --color-email-blue: #170576;
+    --color-email-light-blue: #0030EE;
+    --color-email-sky-blue: #5B9BF0;
 
     --color-bg-logo: rgba(42, 33, 25, 90%);
     --color-bg-button-header: rgba(168, 168, 168, 90%);
+    --color-bg-card-contacts: rgba(98, 98, 98, 35%);
     --color-bg-main-content: #161302; /*marrom*/
+    --color-gradient-email: linear-gradient(to right, #0C0B16, #170576);
 
     --color-hover-button-bg: #6F6F6F;
     --color-hover-button-text: #ffffff;
