@@ -19,7 +19,7 @@ const PROJETCS_CARDS = [
         github: "https://github.com/FireSku11JOHN/BuildIt?tab=readme-ov-file"
     },
     {
-        img: builtitImg ,
+        img: builtitImg,
         description: "O BuildIt é um site criado para reunir tutoriais de construções no Minecraft. O projeto foi desenvolvido com o objetivo de praticar HTML, CSS e JavaScript, ao mesmo tempo em que compartilha ideias criativas para o jogo.",
         stack: ["HTML", "CSS", "JavaScript"],
         url: "https://build-it-kappa.vercel.app/",
@@ -92,9 +92,13 @@ export const Projects = () => {
                 ))}
             </div>
 
-            <button className="mt-6 bg-white text-black px-5 py-2 rounded-[10px] font-medium text-center">
-                Ver mais
-            </button>
+            {PROJETCS_CARDS.length > 6 &&
+                <div className="w-full text-center">
+                    <button className="mt-6 bg-white text-black text-[18px] px-5 py-2 rounded-[10px] font-medium text-center">
+                        VER MAIS PROJETOS
+                    </button>
+                </div>
+            }
         </div>
     );
 };
