@@ -42,31 +42,28 @@ export const Skills = () => {
                             GSAP
                         </li>
                         <li className="list-disc list-inside max-mobile:text-[14px]">
-                            React
+                            ScrollTrigger
                         </li>
                         <li className="list-disc list-inside max-mobile:text-[14px]">
-                            Three.js
+                            Fetch API
                         </li>
                         <li className="list-disc list-inside max-mobile:text-[14px]">
-                            GSAP
+                            Tailwind
                         </li>
                         <li className="list-disc list-inside max-mobile:text-[14px]">
-                            React
+                            BootStrap
                         </li>
                         <li className="list-disc list-inside max-mobile:text-[14px]">
-                            Three.js
+                            Pandas
                         </li>
                         <li className="list-disc list-inside max-mobile:text-[14px]">
-                            GSAP
+                            Regex
                         </li>
                         <li className="list-disc list-inside max-mobile:text-[14px]">
-                            React
+                            SQLAlchemy
                         </li>
                         <li className="list-disc list-inside max-mobile:text-[14px]">
-                            Three.js
-                        </li>
-                        <li className="list-disc list-inside max-mobile:text-[14px]">
-                            GSAP
+                            E mais
                         </li>
                     </ul>
                 </div>
@@ -78,6 +75,9 @@ export const Skills = () => {
                     <ul className="space-y-1">
                         <li className="list-disc list-inside max-mobile:text-[14px]">
                             Python
+                        </li>
+                        <li className="list-disc list-inside max-mobile:text-[14px]">
+                            JavaScript
                         </li>
                     </ul>
                 </div>
@@ -194,7 +194,7 @@ export const Skills = () => {
                     </div>
                 </div>
             </div>
-            <IconCarousel/>
+            <IconCarousel />
         </div>
     );
 };

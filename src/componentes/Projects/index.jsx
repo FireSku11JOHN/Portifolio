@@ -46,7 +46,7 @@ export const Projects = () => {
                     >
                         <img src={project.img} alt="" className="rounded-lg" />
 
-                        <p className="mt-4 text-sm leading-relaxed">
+                        <p className="mt-4 text-[16px] leading-relaxed">
                             {project.description}
                         </p>
 
