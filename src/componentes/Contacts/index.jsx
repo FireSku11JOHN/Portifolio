@@ -78,7 +78,7 @@ export const Contacts = () => {
                         Email
                     </h4>
                     <div className="flex justify-between gap-2 bg-light text-dark text-[20px] py-1 px-3 rounded-[10px] max-mobile:text-[13px]">
-                        <p>avylanjohn@gmail.com</p>
+                        <p>{SOCIAL_LINKS.email}</p>
                         <button>
                             <img src={IconCopy} alt="Copiar"
                             />
