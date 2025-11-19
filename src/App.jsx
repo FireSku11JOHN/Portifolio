@@ -1,5 +1,6 @@
 import { Contacts } from "./componentes/Contacts"
 import { Container } from "./componentes/Container"
+import { Footer } from "./componentes/Footer"
 import { Header } from "./componentes/Header"
 import { HomePage } from "./componentes/HomePage"
 import { MainContent } from "./componentes/MainContent/MainContent"
@@ -23,6 +24,7 @@ function App() {
       </MainContent>
       <Projects/>
       <Contacts/>
+      <Footer/>
     </div>
   )
 }
