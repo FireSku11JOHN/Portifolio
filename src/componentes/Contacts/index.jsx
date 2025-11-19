@@ -78,7 +78,6 @@ export const Contacts = () => {
                         <p>avylanjohn@gmail.com</p>
                         <button>
                             <img src={IconCopy} alt="Copiar"
-                            className=""
                             />
                         </button>
                     </div>

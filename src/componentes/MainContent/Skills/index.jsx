@@ -7,7 +7,7 @@ export const Skills = () => {
                 Skills
             </h2>
 
-            <div className="grid grid-cols-2 gap-10 max-tablet:hidden">
+            <div className="grid grid-cols-2 gap-10 max-tablet:hidden mb-10">
                 <div>
                     <h3 className="text-[20px] font-bold underline mb-3 max-mobile:text-[18px]">
                         Front-End
@@ -100,7 +100,7 @@ export const Skills = () => {
                 </div>
             </div>
 
-            <div className="tablet:hidden flex justify-between content-between">
+            <div className="tablet:hidden flex justify-between content-between mb-10">
                 <div className="flex flex-col justify-between gap-6">
                     <div>
                         <h3 className="text-[20px] font-bold underline mb-3 max-mobile:text-[18px]">

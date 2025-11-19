@@ -27,12 +27,12 @@ export const IconCarousel = () => {
     }, [])
 
     return (
-        <div className="w-full h-16 bg-white mt-14 flex items-center overflow-hidden max-mobile:h-12">
+        <div className="absolute start-0 w-full h-16 bg-white flex items-center overflow-hidden max-mobile:h-12">
             <div className="flex whitespace-nowrap" ref={scrollerRef}>
                 {duplicatedIcons.map((icon, index) => (
                     <div
                         key={index}
-                        className="shrink-0 mx-4 max-mobile:m-5"
+                        className="shrink-0 mx-8 max-mobile:m-5"
                         title={icon.name}
                     >
                         {icon.component}
