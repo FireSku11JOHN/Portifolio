@@ -16,7 +16,7 @@ export const Contacts = () => {
             style={{
                 backgroundImage: `url(${bgGridContacts})`
                 ,
-                backgroundSize: "cover", backgroundPosition: "bottom center"
+                backgroundSize: "cover", backgroundPosition: "top center"
             }}
         >
             <h2 className="text-[32px] font-bold z-5">Contatos</h2>
@@ -81,7 +81,7 @@ export const Contacts = () => {
                         name="msg"
                         id="msg"
                         placeholder="Escreva sua mensagem"
-                        className="h-[200px] bg-light rounded-[10px] text-left text-dark p-3 resize-none focus:outline-hidden max-mobile:text-[16px]"
+                        className="h-[120px] bg-light rounded-[10px] text-left text-dark p-3 resize-none focus:outline-hidden max-mobile:text-[16px]"
                     >
 
                     </textarea>
