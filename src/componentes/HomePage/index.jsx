@@ -5,6 +5,7 @@ import { Button } from "../Button";
 import LinkedinIcon from "../../assets/Icons/Linkedin.svg";
 import GitHubIcon from "../../assets/Icons/GitHub.svg";
 import Photo from "../../assets/Icons/Photo.svg";
+import {SOCIAL_LINKS} from "../../constants/socials"
 
 
 export const HomePage = () => {
@@ -136,14 +137,15 @@ export const HomePage = () => {
                     <h1 className="text-[32px] font-semibold max-mobile:text-[26px]">John Ávylan</h1>
                     <p className="text-[26px] font-medium max-mobile:text-[20px]">Desenvolvedor Front-End</p>
                     <div className="inline-flex gap-8 max-mobile:gap-4 ">
-                        <Button text="LinkedIn"
-                                icon={LinkedinIcon}
-                                link="https://www.linkedin.com/in/john-avylan/"
+                        <Button 
+                            text="LinkedIn"
+                            icon={LinkedinIcon}
+                            link={SOCIAL_LINKS.linkedin}
                         />
                         <Button
                             text="GitHub"
                             icon={GitHubIcon}
-                            link="https://github.com/FireSku11JOHN"
+                            link={SOCIAL_LINKS.github}
                             addClass="border border-white text-light bg-transparent "
                         />
                     </div>

@@ -5,6 +5,7 @@ import IconLinkedInContacts from "../../assets/Icons/IconLinkedInContacts.svg"
 import IconCopy from "../../assets/Icons/IconCopy.svg"
 import IconSend from "../../assets/Icons/IconSend.svg"
 import IconDiagonalArrow from "../../assets/Icons/Icon-diagonal-arrow-right-up-outline.svg"
+import {SOCIAL_LINKS} from "../../constants/socials"
 
 const DEFAULT_STYLE_CARD = "flex flex-col py-20 px-6 items-center bg-bg-card-contacts w-full max-w-[320px] border border-light rounded-lg gap-10 max-desktop:py-14 max-desktop:px-4 max-mobile:py-4 max-mobile:gap-2"
 
@@ -33,8 +34,9 @@ export const Contacts = () => {
                         GitHub
                     </p>
                     <a
-                        href=""
+                        href={SOCIAL_LINKS.github}
                         className={DEFAULT_STYLE_BUTTON_CARD}
+                        target="_blank"
                     >
                         Ir para
                         <img 
@@ -53,8 +55,9 @@ export const Contacts = () => {
                         LinkedIn
                     </p>
                     <a
-                        href=""
+                        href={SOCIAL_LINKS.linkedin}
                         className={DEFAULT_STYLE_BUTTON_CARD}
+                        target="_blank"
                     >
                         Ir para
                         <img 
