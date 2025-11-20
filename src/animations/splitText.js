@@ -3,7 +3,10 @@ import { SplitText } from "gsap/SplitText";
 
 gsap.registerPlugin(SplitText);
 
-export const animateSplitText = (element, options = {}) => {
+export const animateSplitText = async (element, options = {}) => {
+
+    await document.fonts.ready;
+
     const split = new SplitText(element, {
         type: "chars, words, lines",
         linesClass: "line",
@@ -23,7 +26,7 @@ export const animateSplitText = (element, options = {}) => {
     tl.to(split.chars, {
         color: "#7dd3fc",      // azul claro
         scale: 1.3,
-        letterSpacing: "0.2em",
+        letterSpacing: "0.3em",
         duration: 0.6,
         stagger: 0.03,         // cria a onda
         ease: "power1.out"
@@ -32,6 +35,8 @@ export const animateSplitText = (element, options = {}) => {
     // 3. Volta pra cor original
     tl.to(split.chars, {
         color: "#ffffff",      // cor original do texto
+        scale: 1.1,
+        letterSpacing: "0.1em",
         duration: 0.4,
         stagger: 0.03,
         ease: "power1.inOut"

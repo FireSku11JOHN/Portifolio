@@ -5,8 +5,19 @@ export const useSplitText = (ref, options = {}) => {
     useEffect(() => {
         if (!ref.current) return;
 
-        const { split } = animateSplitText(ref.current, options);
+        let splitInstance = null;
 
-        return () => split.revert();
+        const start = async () => {
+            const { split } = await animateSplitText(ref.current, options);
+            splitInstance = split;
+        };
+
+        start(); // inicia a animação
+
+        return () => {
+            if (splitInstance) {
+                splitInstance.revert();
+            }
+        };
     }, []);
 };
