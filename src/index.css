@@ -18,7 +18,8 @@
     --color-bg-logo: rgba(42, 33, 25, 90%);
     --color-bg-button-header: rgba(168, 168, 168, 90%);
     --color-bg-card-contacts: rgba(98, 98, 98, 35%);
-    --color-bg-main-content: #161302; /*marrom*/
+    --color-bg-main-content: #161302;
+    /*marrom*/
     --color-gradient-email: linear-gradient(to right, #0C0B16, #170576);
 
     --color-hover-button-bg: #6F6F6F;
@@ -26,14 +27,23 @@
 
     --breakpoint-xs: 55rem;
     --breakpoint-ts: 65rem;
-    --breakpoint-mobile: 27rem; /*432px*/
-    --breakpoint-mobile-grid: 34rem; /*544px*/
-    --breakpoint-tablet: 45rem; /*720px*/
-    --breakpoint-tablet-wheel: 50rem; /*800px*/
-    --breakpoint-desktop: 64rem; /*1024px*/
+    --breakpoint-mobile: 27rem;
+    /*432px*/
+    --breakpoint-mobile-grid: 34rem;
+    /*544px*/
+    --breakpoint-tablet: 45rem;
+    /*720px*/
+    --breakpoint-tablet-wheel: 50rem;
+    /*800px*/
+    --breakpoint-desktop: 64rem;
+    /*1024px*/
 }
 
 body {
     background: var(--color-cyan);
     /* font-size: var(--font-sans); */
+}
+
+html {
+    scroll-behavior: smooth;
 }

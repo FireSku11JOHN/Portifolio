@@ -30,6 +30,7 @@ const PROJETCS_CARDS = [
 export const Projects = () => {
     return (
         <div
+            id="projects"
             className="p-16 text-light max-tablet:p-6"
             style={{
                 backgroundImage: `url(${bgGridProjects})`,

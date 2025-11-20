@@ -16,6 +16,7 @@ const DEFAULT_STYLE_BUTTON_CARD = "flex justify-center gap-2 text-[18px] font-me
 export const Contacts = () => {
     return (
         <div
+            id="contacts"
             className="text-light p-16 flex flex-col gap-12 relative text-center max-tablet:p-6"
             style={{
                 backgroundImage: `url(${bgGridContacts})`

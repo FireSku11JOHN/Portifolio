@@ -64,7 +64,7 @@ export const TicTacToe = () => {
 
 
     return (
-        <div className="flex justify-between items-center max-tablet:flex-col max-tablet:gap-8 max-tablet:pt-16">
+        <div id="about" className="flex justify-between items-center max-tablet:flex-col max-tablet:gap-8 max-tablet:pt-16">
             <div className="max-w-[60%] max-mobile:max-w-none max-mobile:text-center">
                 Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e seu impacto na vida das pessoas. Tenho grande interesse em aprender e aprimorar minhas habilidades, sempre buscando novos desafios.
             </div>

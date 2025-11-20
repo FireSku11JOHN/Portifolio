@@ -2,7 +2,7 @@ import { IconCarousel } from "../IconCarousel";
 
 export const Skills = () => {
     return (
-        <div className="py-10">
+        <div id="skills" className="py-10">
             <h2 className="text-[32px] font-bold mb-10 max-mobile:text-[26px]">
                 Skills
             </h2>
