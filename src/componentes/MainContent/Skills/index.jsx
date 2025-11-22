@@ -2,8 +2,8 @@ import { IconCarousel } from "../IconCarousel";
 
 export const Skills = () => {
     return (
-        <div id="skills" className="py-10">
-            <h2 className="text-[32px] font-bold mb-10 max-mobile:text-[26px]">
+        <div id="skills" className="flex flex-col justify-center py-10 gap-10 min-h-screen">
+            <h2 className="text-[32px] font-bold mb-16 max-mobile:text-[26px]">
                 Skills
             </h2>
 
@@ -41,9 +41,9 @@ export const Skills = () => {
                         <li className="list-disc list-inside max-mobile:text-[14px]">
                             GSAP
                         </li>
-                        <li className="list-disc list-inside max-mobile:text-[14px]">
+                        {/* <li className="list-disc list-inside max-mobile:text-[14px]">
                             ScrollTrigger
-                        </li>
+                        </li> */}
                         <li className="list-disc list-inside max-mobile:text-[14px]">
                             Fetch API
                         </li>
