@@ -3,6 +3,7 @@ import { Container } from "./componentes/Container"
 import { Footer } from "./componentes/Footer"
 import { Header } from "./componentes/Header"
 import { HomePage } from "./componentes/HomePage"
+import { About } from "./componentes/MainContent/About"
 import { MainContent } from "./componentes/MainContent/MainContent"
 import { RotateWhell } from "./componentes/MainContent/RotateWhell"
 import { Skills } from "./componentes/MainContent/Skills"
@@ -18,8 +19,7 @@ function App() {
         <HomePage />
       </Container>
       <MainContent>
-        <TicTacToe/>
-        <RotateWhell/>
+        <About/>
         <Skills/>
       </MainContent>
       <Projects/>

@@ -64,31 +64,26 @@ export const TicTacToe = () => {
 
 
     return (
-        <div id="about" className="aboutSec flex justify-between items-center max-tablet:flex-col max-tablet:gap-8 max-tablet:pt-16">
-            <div className="max-w-[60%] max-mobile:max-w-none max-mobile:text-center">
-                Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e seu impacto na vida das pessoas. Tenho grande interesse em aprender e aprimorar minhas habilidades, sempre buscando novos desafios.
+        <div className=" text-light flex flex-col items-center justify-center h-[370px] gap-8">
+            <p className="underline">Vamos Jogar!</p>
+            <div className="grid grid-cols-3 grid-rows-3 gap-[5px] w-fit bg-light items-center justify-center">
+                {boardState.map((value, index) => (
+                    <div
+                        className="bg-bg-main-content w-16 h-16 text-center text-[30px] font-bold "
+                        key={index}
+                        onClick={() => handleClick(index)}
+                    >
+                        {value ? value.toUpperCase() : ""}
+                    </div>
+                ))}
             </div>
-            <div className=" text-light flex flex-col items-center justify-center h-[370px] gap-8">
-                <p className="underline">Vamos Jogar!</p>
-                <div className="grid grid-cols-3 grid-rows-3 gap-[5px] w-fit bg-light items-center justify-center">
-                    {boardState.map((value, index) => (
-                        <div
-                            className="bg-bg-main-content w-16 h-16 text-center text-[30px] font-bold "
-                            key={index}
-                            onClick={() => handleClick(index)}
-                        >
-                            {value ? value.toUpperCase() : ""}
-                        </div>
-                    ))}
-                </div>
-                <button
-                    onClick={startGame}
-                    className=""
-                >
-                    <img src={IconRestart} alt="Icone de Reiniciar" />
-                </button>
-                <p className="">{message}</p>
-            </div>
+            <button
+                onClick={startGame}
+                className=""
+            >
+                <img src={IconRestart} alt="Icone de Reiniciar" />
+            </button>
+            <p className="">{message}</p>
         </div>
     )
 }
