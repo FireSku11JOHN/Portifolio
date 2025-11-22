@@ -1,10 +1,28 @@
+import { useEffect, useRef } from "react"
 import Logo from "../../assets/Logo.svg"
+import gsap from "gsap"
 
 import { ButtonHeader } from "../ButtonHeader"
+import { ScrollTrigger } from "gsap/all"
 
 export const Header = () => {
+    const btn = useRef()
+    gsap.registerPlugin(ScrollTrigger) 
 
-    const normalButtonStyles = "bg-bg-button-header text-center text-dark text-[14px] leading-[120%] tracking-[1px] py-2 rounded flex-1 cursor-pointer max-mobile:text-[12px]"
+    useEffect(()=> {
+        gsap.to(btn.current, {
+            width: '100%',
+            scrollTrigger: {
+            trigger:'.aboutSec',
+            endTrigger: '.end-trigger',
+            end: 'bottom bottom',
+            scrub: true,
+            // markers: true
+            }
+        })
+    }, [])
+
+    const normalButtonStyles = "relative overflow-hidden bg-bg-button-header text-center text-dark text-[14px] leading-[120%] tracking-[1px] py-2 rounded flex-1 cursor-pointer max-mobile:text-[12px]"
 
     return (
         <nav className="fixed z-50 w-full">
@@ -19,8 +37,9 @@ export const Header = () => {
                 <ButtonHeader className={normalButtonStyles} href="#">
                     HOME
                 </ButtonHeader>
-                <ButtonHeader className={normalButtonStyles} href="#about">
-                    SOBRE
+                <ButtonHeader  className={normalButtonStyles} href="#about">
+                    <div className="relative z-10">SOBRE</div>
+                    <div ref={btn} className="absolute z-5 transition delay-75 bg-light top-0  h-full"></div>
                 </ButtonHeader>
                 <ButtonHeader className={normalButtonStyles} href="#skills">
                     SKILLS

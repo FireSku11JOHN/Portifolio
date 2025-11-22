@@ -21,7 +21,7 @@ export const RotateWhell = () => {
     }, []);
 
     return (
-        <div className="flex items-center relative overflow-visible pb-6 mt-14
+        <div className="end-trigger flex items-center relative overflow-visible pb-6 mt-14
                     border-b-3 border-light border-dashed 
                     max-tablet:flex-col-reverse max-mobile:gap-10">
 
