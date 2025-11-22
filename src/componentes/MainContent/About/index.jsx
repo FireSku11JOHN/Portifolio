@@ -4,14 +4,14 @@ import { TicTacToe } from "../TicTacToe"
 
 export const About = () => {
     return (
-        <div>
-            <div id="about" className="aboutSec flex justify-between items-center max-tablet:flex-col max-tablet:gap-8 max-tablet:pt-16">
+        <div id="about">
+            <div className="aboutSec flex justify-between items-center max-tablet:flex-col max-tablet:gap-8 max-tablet:pt-16">
                 <div className="max-w-[60%] max-mobile:max-w-none max-mobile:text-center">
                     Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e seu impacto na vida das pessoas. Tenho grande interesse em aprender e aprimorar minhas habilidades, sempre buscando novos desafios.
                 </div>
                 <TicTacToe />
             </div>
-            <div className="end-trigger flex items-center relative overflow-visible pb-6 mt-14
+            <div className="flex items-center relative overflow-visible pb-6 mt-14
                         border-b-3 border-light border-dashed
                         max-tablet:flex-col-reverse max-mobile:gap-10">
                 <RotateWhell />            

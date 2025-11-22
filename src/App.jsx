@@ -5,9 +5,7 @@ import { Header } from "./componentes/Header"
 import { HomePage } from "./componentes/HomePage"
 import { About } from "./componentes/MainContent/About"
 import { MainContent } from "./componentes/MainContent/MainContent"
-import { RotateWhell } from "./componentes/MainContent/RotateWhell"
 import { Skills } from "./componentes/MainContent/Skills"
-import { TicTacToe } from "./componentes/MainContent/TicTacToe"
 import { Projects } from "./componentes/Projects"
 
 function App() {
