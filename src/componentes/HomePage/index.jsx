@@ -11,7 +11,7 @@ import { useSwingContainer } from "../../hooks/useSwingContainer";
 
 export const HomePage = () => {
     const mountRef = useRef();
-    // useThreeScene(mountRef)
+    useThreeScene(mountRef)
 
     const titleRef = useRef();
     useSplitText(titleRef);

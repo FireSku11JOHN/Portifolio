@@ -45,7 +45,7 @@ export function useThreeScene(containerRef) {
         // controls.target.set(0, 40, 0);
 
         // === Geometria e material ===
-        const geometry = new THREE.PlaneGeometry(600, 500, 50, 50); //tamanho e quantidade de linhas//
+        const geometry = new THREE.PlaneGeometry(600, 500, 40, 40); //tamanho e quantidade de linhas//
         const material = new THREE.MeshBasicMaterial({
             color: 0xB3B3B3,
             wireframe: true,
