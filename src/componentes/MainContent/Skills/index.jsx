@@ -56,9 +56,9 @@ export const Skills = () => {
                         <li className="list-disc list-inside max-mobile:text-[14px]">
                             Pandas
                         </li>
-                        <li className="list-disc list-inside max-mobile:text-[14px]">
+                        {/* <li className="list-disc list-inside max-mobile:text-[14px]">
                             Regex
-                        </li>
+                        </li> */}
                         <li className="list-disc list-inside max-mobile:text-[14px]">
                             SQLAlchemy
                         </li>
@@ -164,31 +164,22 @@ export const Skills = () => {
                                 GSAP
                             </li>
                             <li className="list-disc list-inside max-mobile:text-[14px]">
-                                React
+                                Fetch API
                             </li>
                             <li className="list-disc list-inside max-mobile:text-[14px]">
-                                Three.js
+                                Tailwind
                             </li>
                             <li className="list-disc list-inside max-mobile:text-[14px]">
-                                GSAP
+                                BootStrap
                             </li>
                             <li className="list-disc list-inside max-mobile:text-[14px]">
-                                React
+                                Pandas
                             </li>
                             <li className="list-disc list-inside max-mobile:text-[14px]">
-                                Three.js
+                                SQLAlchemy
                             </li>
                             <li className="list-disc list-inside max-mobile:text-[14px]">
-                                GSAP
-                            </li>
-                            <li className="list-disc list-inside max-mobile:text-[14px]">
-                                React
-                            </li>
-                            <li className="list-disc list-inside max-mobile:text-[14px]">
-                                Three.js
-                            </li>
-                            <li className="list-disc list-inside max-mobile:text-[14px]">
-                                GSAP
+                                E mais
                             </li>
                         </ul>
                     </div>
