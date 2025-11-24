@@ -9,7 +9,6 @@ export const useTitleSplit = (ref) => {
         const right = ref.current.querySelector(".title-right");
 
         if (!left || !right) {
-            // debug: se não encontrar, loga e sai
             console.warn("useTitleSplit: elementos .title-left ou .title-right não encontrados", {
                 leftFound: !!left,
                 rightFound: !!right,
@@ -18,7 +17,6 @@ export const useTitleSplit = (ref) => {
             return;
         }
 
-        // garante que os spans sejam transformáveis e não mexerem o fluxo do layout
         left.style.display = left.style.display || "inline-block";
         right.style.display = right.style.display || "inline-block";
         left.style.willChange = "transform, opacity";
@@ -32,20 +30,16 @@ export const useTitleSplit = (ref) => {
                 if (entry.isIntersecting && !hasAnimated) {
                     hasAnimated = true;
 
-                    // cria timeline para sincronizar encontro das partes
                     tl = gsap.timeline();
 
-                    // posicione inicialmente: left fora à esquerda (-50% do width do elemento) e acima levemente
                     gsap.set(left, { x: "-100%", y: -10, opacity: 0 });
-                    // right fora à direita
                     gsap.set(right, { x: "100%", y: 10, opacity: 0 });
 
-                    // anima: left vem da esquerda, right vem da direita, se encontram no centro
                     tl.to(left, {
                         x: "0%",
                         y: 0,
                         opacity: 1,
-                        duration: 0.8,
+                        duration: 1,
                         ease: "power3.out",
                     }, 0);
 
@@ -53,24 +47,22 @@ export const useTitleSplit = (ref) => {
                         x: "0%",
                         y: 0,
                         opacity: 1,
-                        duration: 0.8,
+                        duration: 1,
                         ease: "power3.out",
                     }, 0);
 
-                    // opcional: pequeno "squash" ou bounce quando se encontram
-                    tl.to([left, right], {
-                        scale: 1.02,
-                        duration: 0.12,
-                        yoyo: true,
-                        repeat: 1,
-                        ease: "power1.inOut",
-                    }, 0.75);
+                    // tl.to([left, right], {
+                    //     scale: 1.02,
+                    //     duration: 0.12,
+                    //     yoyo: true,
+                    //     repeat: 1,
+                    //     ease: "power1.inOut",
+                    // }, 0.75);
 
-                    // desconecta para performance
                     observer.disconnect();
                 }
             },
-            { threshold: 0.15 } // quantidade visível para disparar
+            { threshold: 0.15 }
         );
 
         observer.observe(ref.current);
