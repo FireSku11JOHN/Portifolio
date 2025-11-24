@@ -3,7 +3,7 @@ import { InfoCards } from "../InfoCards"
 import { RotateWhell } from "../RotateWhell"
 import { TicTacToe } from "../TicTacToe"
 import { useSplitTextAbout } from "../../../hooks/useSplitTextAbout"
-import { useTitleSplit } from "../../../hooks/useTitleSplit.js"
+import { useTitleSplit } from "../../../hooks/useTitleSplit"
 
 export const About = () => {
 
