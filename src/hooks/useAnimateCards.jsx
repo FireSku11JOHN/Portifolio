@@ -19,7 +19,7 @@ export const useAnimateCards = () => {
                     start: "top 90%", 
                     end: "bottom bottom", 
                     toggleActions: "play none none none",
-                    markers: true
+                    // markers: true
                 }
             });
 

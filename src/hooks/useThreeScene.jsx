@@ -20,6 +20,7 @@ export function useThreeScene(containerRef) {
 
         // === Renderizador ===
         const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setPixelRatio(window.devicePixelRatio);
         renderer.setSize(
             containerRef.current.clientWidth,
             containerRef.current.clientHeight
