@@ -6,10 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-/**
- * @param {string} containerSelector - Seletor CSS do container que disparará a animação (ex: "#projects").
- */
-export const useAnimateCards = (containerSelector) => {
+export const useAnimateCards = () => {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -40,9 +37,9 @@ export const useAnimateCards = (containerSelector) => {
                 }
             );
 
-        }, containerSelector);
+        }, );
 
         return () => ctx.revert(); 
         
-    }, [containerSelector]); 
+    }, []); 
 };
