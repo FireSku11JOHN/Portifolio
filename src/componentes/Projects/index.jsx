@@ -2,6 +2,8 @@ import builtitImg from "../../assets/img/built-it-home.png"
 import arrowRight from "../../assets/Icons/arrow-right.svg"
 import arrowRightWhite from "../../assets/Icons/arrow-right-white.svg"
 import bgGridProjects from "../../assets/img/bgGridProjects.png"
+import { useAnimateCards } from '../../hooks/useAnimateCards';
+import { useRef } from "react";
 
 const PROJETCS_CARDS = [
     {
@@ -28,6 +30,11 @@ const PROJETCS_CARDS = [
 ];
 
 export const Projects = () => {
+
+    const triggerRef = useRef()
+
+    useAnimateCards(triggerRef.current)
+
     return (
         <div
             id="projects"
@@ -39,11 +46,13 @@ export const Projects = () => {
         >
             <h2 className="text-[32px] font-bold">Projetos</h2>
 
-            <div className="grid grid-cols-3 gap-4 my-18 max-desktop:grid-cols-2 max-tablet:my-10 max-mobile-grid:grid-cols-1">
+            <div 
+                ref={triggerRef}
+                className="tt grid grid-cols-3 gap-4 my-18 max-desktop:grid-cols-2 max-tablet:my-10 max-mobile-grid:grid-cols-1">
                 {PROJETCS_CARDS.map((project, index) => (
                     <div
                         key={index}
-                        className="flex flex-col justify-between bg-dark-blue p-6 rounded-xl max-mobile:p-4"
+                        className="project-card flex flex-col justify-between bg-dark-blue p-6 rounded-xl max-mobile:p-4"
                     >
                         <img src={project.img} alt="" className="rounded-lg" />
 
