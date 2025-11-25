@@ -6,6 +6,8 @@ import IconLinkedInContacts from "../../assets/Icons/IconLinkedInContacts.svg"
 import IconCopy from "../../assets/Icons/IconCopy.svg"
 import IconSend from "../../assets/Icons/IconSend.svg"
 import {SOCIAL_LINKS} from "../../constants/socials"
+import { copyEmail } from "../../utils/copyEmail";
+import { CopyEmailButton } from "../ButtonCopyEmail";
 
 const DEFAULT_STYLE_CARD = "flex flex-col py-20 px-6 items-center bg-bg-card-contacts w-full max-w-[320px] border border-light rounded-lg gap-10 hover:scale-105 transition-all max-desktop:py-14 max-desktop:px-4 max-mobile:py-4 max-mobile:gap-2"
 
@@ -58,10 +60,7 @@ export const Contacts = () => {
                     </h4>
                     <div className="flex justify-between gap-2 bg-light text-dark text-[20px] py-1 px-3 rounded-[10px] max-mobile:text-[13px]">
                         <p>{SOCIAL_LINKS.email}</p>
-                        <button>
-                            <img src={IconCopy} alt="Copiar"
-                            />
-                        </button>
+                        <CopyEmailButton email={SOCIAL_LINKS.email} />
                     </div>
                 </div>
 
