@@ -17,7 +17,7 @@ export const About = () => {
     useSplitTextAbout(text2Ref)
 
     return (
-        <div id="about">
+        <div id="about" >
             <div className="aboutSec flex justify-between items-center max-tablet:flex-col max-tablet:gap-8 max-tablet:pt-16">
                 <div ref={textRef} className="max-w-[60%] max-mobile:max-w-none max-mobile:text-center">
                     Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e seu impacto na vida das pessoas. Tenho grande interesse em aprender e aprimorar minhas habilidades, sempre buscando novos desafios.
@@ -31,7 +31,7 @@ export const About = () => {
                 <RotateWhell />
                 <div className="relative z-10 w-[65%] flex flex-col gap-20 max-mobile:w-full">
                     <div
-                        className="font-bold text-[28px] max-mobile:text-[24px]"
+                        className="font-bold text-[28px] max-mobile:text-[24px] overflow-hidden"
                         ref={titleRef}
                     >
                         <span className="title-left inline-block">* Foco em agilidade,</span>
