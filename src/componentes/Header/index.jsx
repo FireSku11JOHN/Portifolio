@@ -55,11 +55,11 @@ export const Header = () => {
                     <div className="relative z-10">PROJETOS</div>
                     <div id="btn-projects" className={divFill}></div>
                 </ButtonHeader>
-                <ButtonHeader className={normalButtonStyles} href="#">
+                <ButtonHeader className={normalButtonStyles} href="#contacts">
                     <div className="relative z-10">CONTATOS</div>
                     <div id="btn-contacts" className={divFill}></div>
                 </ButtonHeader>
-                <ButtonHeader className="bg-light-cyan text-center text-dark text-[14px] leading-[120%] tracking-[1px] py-2 rounded flex-1 max-xs:hidden cursor-pointer" href="#contacts">
+                <ButtonHeader className="bg-light-cyan text-center text-dark text-[14px] leading-[120%] tracking-[1px] py-2 rounded flex-1 max-xs:hidden cursor-pointer" href="#">
                     HOME
                 </ButtonHeader>
             </div>
