@@ -3,11 +3,9 @@ import bgGridContacts from "../../assets/img/bgGridContacts.png"
 import notebookBaloon from "../../assets/img/notebook-baloon.png"
 import IconGitHubContacts from "../../assets/Icons/IconGitHubContacts.svg"
 import IconLinkedInContacts from "../../assets/Icons/IconLinkedInContacts.svg"
-import IconCopy from "../../assets/Icons/IconCopy.svg"
-import IconSend from "../../assets/Icons/IconSend.svg"
 import {SOCIAL_LINKS} from "../../constants/socials"
-import { copyEmail } from "../../utils/copyEmail";
 import { CopyEmailButton } from "../ButtonCopyEmail";
+import { EmailForm } from "../EmailForm";
 
 const DEFAULT_STYLE_CARD = "flex flex-col py-20 px-6 items-center bg-bg-card-contacts w-full max-w-[320px] border border-light rounded-lg gap-10 hover:scale-105 transition-all max-desktop:py-14 max-desktop:px-4 max-mobile:py-4 max-mobile:gap-2"
 
@@ -70,21 +68,8 @@ export const Contacts = () => {
                         htmlFor="msg">
                         Envie uma menssagem
                     </label>
-                    <textarea
-                        name="msg"
-                        id="msg"
-                        placeholder="Escreva sua mensagem"
-                        className="h-[120px] bg-light rounded-[10px] text-left text-dark p-3 resize-none focus:outline-hidden max-mobile:text-[13px]"
-                    >
+                    <EmailForm />
 
-                    </textarea>
-
-                    <button
-                        className="flex gap-2 w-fit text-[16px] text-dark font-medium bg-light rounded-[10px] py-2 px-4"
-                    >
-                        Enviar
-                        <img src={IconSend} alt="Enviar" />
-                    </button>
                 </div>
             </div>
 
