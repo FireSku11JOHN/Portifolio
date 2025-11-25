@@ -22,7 +22,7 @@ export const EmailForm = () => {
                 href={mailtoLink}
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
-                className="flex gap-2 w-fit text-[16px] text-dark font-medium bg-light rounded-[10px] py-2 px-4 transition-all hover:bg-light-cyan hover:text-light"
+                className="flex items-center gap-2 w-fit text-[16px] text-dark font-medium bg-light rounded-[10px] py-2 px-4 transition-all hover:bg-light-cyan hover:text-light max-mobile:text-[14px]"
             >
                 Enviar
                 <img src={hover ? IconSendWhite : IconSend } alt="Enviar" />
