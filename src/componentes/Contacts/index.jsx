@@ -11,8 +11,6 @@ const DEFAULT_STYLE_CARD = "flex flex-col py-20 px-6 items-center bg-bg-card-con
 
 const DEFAULT_STYLE_TITLE_CARD = "text-[22px] font-medium max-mobile:text-[16px] "
 
-const DEFAULT_STYLE_BUTTON_CARD = "flex justify-center gap-2 text-[18px] font-medium text-dark bg-light py-4 px-6 w-fit rounded-[10px] max-tablet:text-[14px] max-tablet:py-2 max-mobile:w-full max-mobile:px-2"
-
 export const Contacts = () => {
     return (
         <div
@@ -39,7 +37,7 @@ export const Contacts = () => {
                 </div>
 
                 <div className={DEFAULT_STYLE_CARD}>
-                    <img src={IconLinkedInContacts} alt="Icone GitHub"
+                    <img src={IconLinkedInContacts} alt="Icone LinkedIn"
                         className="w-40"
                     />
                     <p className={DEFAULT_STYLE_TITLE_CARD }>

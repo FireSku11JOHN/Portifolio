@@ -11,7 +11,7 @@ import { useSwingContainer } from "../../hooks/useSwingContainer";
 
 export const HomePage = () => {
     const mountRef = useRef();
-    // useThreeScene(mountRef)
+    useThreeScene(mountRef)
 
     const titleRef = useRef();
     useSplitText(titleRef);
@@ -38,7 +38,7 @@ export const HomePage = () => {
                             text="GitHub"
                             icon={GitHubIcon}
                             link={SOCIAL_LINKS.github}
-                            addClass="border border-white text-light bg-transparent "
+                            addClass="border border-white text-light bg-transparent hover:border-dark hover:text-dark"
                         />
                     </div>
                 </div>

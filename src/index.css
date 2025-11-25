@@ -22,8 +22,7 @@
     /*marrom*/
     --color-gradient-email: linear-gradient(to right, #0C0B16, #170576);
 
-    --color-hover-button-bg: #6F6F6F;
-    --color-hover-button-text: #ffffff;
+    --color-hover-button-bg: #B7B7B7;
 
     --breakpoint-xs: 55rem;
     --breakpoint-ts: 65rem;
