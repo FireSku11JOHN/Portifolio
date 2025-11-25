@@ -9,12 +9,12 @@ export const EmailForm = () => {
     const mailtoLink = `mailto:${SOCIAL_LINKS.email}?subject=Contato%20do%20portfólio&body=${encodeURIComponent(msg)}`;
 
     return (
-        <div className="flex flex-col gap-6 text-start w-[500px]">
+        <div className="flex flex-col gap-6 text-start">
             <textarea
                 value={msg}
                 onChange={(e) => setMsg(e.target.value)}
                 placeholder="Escreva sua mensagem"
-                className="h-[120px] bg-light rounded-[10px] text-dark p-3 resize-none"
+                className="h-[120px] bg-light rounded-[10px] text-left text-dark p-3 resize-none focus:outline-hidden max-mobile:text-[13px]"
             />
 
             <a
