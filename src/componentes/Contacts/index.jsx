@@ -74,7 +74,7 @@ export const Contacts = () => {
             </div>
 
             <img
-                className="absolute z-1 w-[600px] h-[800px] right-[10%]"
+                className="absolute z-1 w-[600px] h-[800px] right-[10%] max-tablet:w-[400px] max-tablet:h-[600px] max-mobile:w-[320px] max-mobile:h-[510px]"
                 src={notebookBaloon} alt=""
             />
         </div >
