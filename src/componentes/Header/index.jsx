@@ -27,7 +27,7 @@ export const Header = () => {
         return () => {
             animations.forEach(anim => anim.scrollTrigger.kill())
         }
-    }, []) // Array de dependências vazio para rodar APENAS na montagem.
+    }, [])
 
     const normalButtonStyles = "relative overflow-hidden bg-bg-button-header text-center text-dark text-[14px] leading-[120%] tracking-[1px] py-2 rounded flex-1 cursor-pointer max-mobile:text-[12px]"
 
@@ -43,10 +43,12 @@ export const Header = () => {
             </div>
             <div className="flex gap-3 mx-6 my-3">
                 <img src={Logo} className="bg-bg-logo h-8 py-2 rounded inline-block flex-1 object-contain max-xs:hidden cursor-pointer"></img>
+
                 <ButtonHeader className={normalButtonStyles} href="#about">
                     <div className="relative z-10">SOBRE</div>
                     <div id="btn-about" className={divFill}></div>
                 </ButtonHeader>
+                
                 <ButtonHeader className={normalButtonStyles} href="#skills">
                     <div className="relative z-10">SKILLS</div>
                     <div id="btn-skills" className={divFill}></div>

@@ -2,8 +2,9 @@ import builtitImg from "../../assets/img/built-it-home.png"
 import arrowRight from "../../assets/Icons/arrow-right.svg"
 import arrowRightWhite from "../../assets/Icons/arrow-right-white.svg"
 import bgGridProjects from "../../assets/img/bgGridProjects.png"
+import bgGridProjectsMobile from "../../assets/img/bgGridProjectsMobile.png"
 import { useAnimateCards } from '../../hooks/useAnimateCards';
-import { useRef } from "react";
+import { useEffect, useState } from "react"
 
 const PROJETCS_CARDS = [
     {
@@ -31,6 +32,21 @@ const PROJETCS_CARDS = [
 
 export const Projects = () => {
 
+    const [bgImage, setBgImage] = useState(bgGridProjects);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+        const handleResize = () => {
+            setBgImage(mediaQuery.matches ? bgGridProjectsMobile : bgGridProjects);
+        };
+
+        handleResize(); // set inicial
+        mediaQuery.addEventListener("change", handleResize);
+
+        return () => mediaQuery.removeEventListener("change", handleResize);
+    }, []);
+
     useAnimateCards()
 
     return (
@@ -38,13 +54,14 @@ export const Projects = () => {
             id="projects"
             className="p-16 text-light max-tablet:p-6"
             style={{
-                backgroundImage: `url(${bgGridProjects})`,
-                backgroundSize: "cover", backgroundPosition: "bottom center"
+                backgroundImage: `url(${bgImage})`,
+                backgroundSize: "cover",
+                backgroundPosition: "bottom center",
             }}
         >
             <h2 className="text-[32px] font-bold">Projetos</h2>
 
-            <div 
+            <div
                 className="tt grid grid-cols-3 gap-4 my-18 max-desktop:grid-cols-2 max-tablet:my-10 max-mobile-grid:grid-cols-1">
                 {PROJETCS_CARDS.map((project, index) => (
                     <div
