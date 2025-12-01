@@ -66,7 +66,7 @@ export const Projects = () => {
                 {PROJETCS_CARDS.map((project, index) => (
                     <div
                         key={index}
-                        className="project-card flex flex-col justify-between bg-dark-blue p-6 rounded-xl max-mobile:p-4"
+                        className="project-card flex flex-col justify-between bg-bg-main-content p-6 rounded-xl max-mobile:p-4"
                     >
                         <img src={project.img} alt="" className="rounded-lg" />
 

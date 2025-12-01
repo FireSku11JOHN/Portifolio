@@ -7,7 +7,7 @@ import {SOCIAL_LINKS} from "../../constants/socials"
 import { CopyEmailButton } from "../ButtonCopyEmail";
 import { EmailForm } from "../EmailForm";
 
-const DEFAULT_STYLE_CARD = "flex flex-col py-20 px-6 items-center bg-bg-card-contacts w-full max-w-[320px] border border-light rounded-lg gap-10 hover:scale-105 transition-all max-desktop:py-14 max-desktop:px-4 max-mobile:py-4 max-mobile:gap-2"
+const DEFAULT_STYLE_CARD = "flex flex-col py-20 px-6 items-center bg-bg-card-contacts backdrop-blur-[2px] w-full max-w-[320px] border border-light rounded-lg gap-10 hover:scale-105 transition-all max-desktop:py-14 max-desktop:px-4 max-mobile:py-4 max-mobile:gap-2"
 
 const DEFAULT_STYLE_TITLE_CARD = "text-[22px] font-medium max-mobile:text-[16px] "
 

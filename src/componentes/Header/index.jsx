@@ -29,7 +29,7 @@ export const Header = () => {
         }
     }, [])
 
-    const normalButtonStyles = "relative overflow-hidden bg-bg-button-header text-center text-dark text-[14px] leading-[120%] tracking-[1px] py-2 rounded flex-1 cursor-pointer max-mobile:text-[12px]"
+    const normalButtonStyles = "relative overflow-hidden bg-bg-button-header backdrop-blur-xs text-center text-dark text-[14px] leading-[120%] tracking-[1px] py-2 rounded flex-1 cursor-pointer max-mobile:text-[12px]"
 
     const divFill = "absolute z-5 transition delay-75 bg-light top-0  h-full"
 
@@ -42,7 +42,7 @@ export const Header = () => {
                 </ButtonHeader>
             </div>
             <div className="flex gap-3 mx-6 my-3">
-                <img src={Logo} className="bg-bg-logo h-8 py-2 rounded inline-block flex-1 object-contain max-xs:hidden cursor-pointer"></img>
+                <img src={Logo} className="bg-bg-logo backdrop-blur-xs h-8 py-2 rounded inline-block flex-1 object-contain max-xs:hidden cursor-pointer"></img>
 
                 <ButtonHeader className={normalButtonStyles} href="#about">
                     <div className="relative z-10">SOBRE</div>
