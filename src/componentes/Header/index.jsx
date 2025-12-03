@@ -29,7 +29,7 @@ export const Header = () => {
         }
     }, [])
 
-    const normalButtonStyles = "relative overflow-hidden bg-bg-button-header backdrop-blur-xs text-center text-dark text-[14px] leading-[120%] tracking-[1px] py-2 rounded flex-1 cursor-pointer max-mobile:text-[12px]"
+    const normalButtonStyles = "relative overflow-hidden bg-bg-button-header backdrop-blur-xs text-center text-dark text-[14px] font-medium leading-[120%] tracking-[1px] py-2 rounded flex-1 cursor-pointer max-mobile:text-[12px]"
 
     const divFill = "absolute z-5 transition delay-75 bg-light top-0  h-full"
 

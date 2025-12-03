@@ -20,7 +20,7 @@ export const About = () => {
         <div id="about" >
             <div className="aboutSec flex justify-between items-center max-tablet:flex-col max-tablet:gap-8 max-tablet:pt-16">
                 <div ref={textRef} className="max-w-[60%] max-mobile:max-w-none max-mobile:text-center">
-                    Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e seu impacto na vida das pessoas. Tenho grande interesse em aprender e aprimorar minhas habilidades, sempre buscando novos desafios.
+                    Sou desenvolvedor front-end em formação, apaixonado por criar interfaces limpas, funcionais e bem estruturadas. Tenho dedicado meus estudos a tecnologias como React, JavaScript, CSS moderno e ferramentas que otimizam a experiência do usuário. Gosto de unir design, usabilidade e código para transformar ideias em produtos reais, explorando animações, responsividade e boas práticas que tornam a web mais fluida e acessível. Valorizo muito a organização do código, componentização e o uso de padrões que facilitem escalabilidade e manutenção.
                 </div>
                 <TicTacToe />
             </div>
@@ -38,11 +38,7 @@ export const About = () => {
                         <span className="title-right inline-block"> inovação e melhoria contínua *</span>
                     </div>
                     <div ref={text2Ref} className="max-mobile:text-center max-mobile:w-full">
-                        Estudo e aplico métodos ágeis em projetos pessoais e voluntários para
-                        otimizar processos e aumentar a eficiência. Minha experiência com
-                        atendimento ao público fortaleceu minha capacidade de comunicação e
-                        resolução de problemas. Sou proativo, dinâmico e comprometido em crescer
-                        na área de TI, contribuindo com inovação e soluções eficazes.
+                        Busco constantemente evoluir, experimentando novas abordagens e me desafiando com projetos pessoais que envolvem UI, animações, interatividade e performance. Acredito que o front-end vai muito além da estética: é sobre criar experiências que funcionam bem, são intuitivas e fazem sentido para o usuário. Sou comprometido, curioso e motivado a aprender, pronto para contribuir em equipes que valorizam inovação, colaboração e qualidade no desenvolvimento.
                     </div>
                     <InfoCards />
                 </div>
